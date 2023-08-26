@@ -70,6 +70,7 @@ def plot_scatter(xs, ys, **scatter_kwargs):
         "alpha": .6,
         "lw": 3,
         "s": 80,
+        "color": "C0",
         "facecolors": "none"
     }
     
