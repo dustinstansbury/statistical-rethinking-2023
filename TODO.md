@@ -1,0 +1,2 @@
+- Add video hyperlinks to the frontmatter in all notebooks
+- Update PyMC Version [once this bug fix lands](https://github.com/pymc-devs/pymc/pull/6882).
