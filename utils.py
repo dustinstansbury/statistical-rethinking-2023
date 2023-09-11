@@ -114,9 +114,6 @@ def plot_errorbar(
         bar[0].set_linewidth(error_width)
 
 
-import networkx as nx
-
-
 def plot_graph(graph, **graph_kwargs):
     """Draw a network graph.
 
