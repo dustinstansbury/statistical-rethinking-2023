@@ -114,6 +114,28 @@ def plot_errorbar(
         bar[0].set_linewidth(error_width)
 
 
+def plot_x_errorbar(
+    xs, ys, error_lower, error_upper, colors="C0", error_width=12, alpha=0.3
+):
+    if isinstance(colors, str):
+        colors = [colors] * len(xs)
+
+    """Draw thick error bars with consistent style"""
+    for ii, (x, y, err_l, err_u) in enumerate(zip(xs, ys, error_lower, error_upper)):
+        marker, _, bar = plt.errorbar(
+            x=x,
+            y=y,
+            xerr=np.array((err_l, err_u))[:, None],
+            ls="none",
+            color=colors[ii],
+            zorder=1,
+        )
+        plt.setp(bar[0], capstyle="round")
+        marker.set_fillstyle("none")
+        bar[0].set_alpha(alpha)
+        bar[0].set_linewidth(error_width)
+
+
 def plot_graph(graph, **graph_kwargs):
     """Draw a network graph.
 
