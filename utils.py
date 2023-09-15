@@ -29,12 +29,12 @@ def crosstab(x: np.array, y: np.array, labels: list[str] = None):
 
 
 def center(vals: np.ndarray) -> np.ndarray:
-    return vals - vals.mean()
+    return vals - np.nanmean(vals)
 
 
 def standardize(vals: np.ndarray) -> np.ndarray:
     centered_vals = center(vals)
-    return centered_vals / centered_vals.std()
+    return centered_vals / np.nanstd(centered_vals)
 
 
 def convert_to_categorical(vals):
