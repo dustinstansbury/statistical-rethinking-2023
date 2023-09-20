@@ -1,4 +1,3 @@
-- Add video hyperlinks to the frontmatter in all notebooks
 - Update PyMC Version [once this bug fix lands](https://github.com/pymc-devs/pymc/pull/6882).
 - Add Bayesian updating demo for correlated features to Lecture 14
 - Add HMC path demo to Lecture 14 BONUS
