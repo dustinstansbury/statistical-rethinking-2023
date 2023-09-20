@@ -14,13 +14,13 @@ $ conda activate statistical-rethinking-2023
 Otherwise, the Python version and standard packages that are imported in the notebooks via the `init_notebook.py` script are as follows:
 
 ```
-Watermark
----------
+Watermark:
+----------
 Python implementation: CPython
 Python version       : 3.10.12
-IPython version      : 8.14.0
+IPython version      : 8.15.0
 
-Compiler    : Clang 15.0.7
+Compiler    : Clang 15.0.7 
 OS          : Darwin
 Release     : 22.2.0
 Machine     : arm64
@@ -28,12 +28,12 @@ Processor   : arm
 CPU cores   : 10
 Architecture: 64bit
 
-scipy      : 1.11.2
-arviz      : 0.16.1
-numpy      : 1.25.2
-pymc       : 5.7.2
 statsmodels: 0.14.0
+numpy      : 1.24.4
+arviz      : 0.16.1
+scipy      : 1.11.2
+pymc       : 5.8.0
+pandas     : 2.1.0
 xarray     : 2023.8.0
-pandas     : 2.0.3
-matplotlib : 3.7.1
+matplotlib : 3.7.2
 ```
