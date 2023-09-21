@@ -5,7 +5,7 @@ Python/PyMC 5 implementations of Richard McElreath's outstanding lecture series 
 
 
 ## Setup
-All notebooks are were developed on a Mac laptop with M1 Pro ARM64 chipset. The python environment is managed using [miniconda](https://docs.conda.io/en/latest/miniconda.html). If you are on a similar hardware setup, you can initialize the environment via the standard conda workflow:
+All notebooks were developed on a Mac laptop with M1 Pro ARM64 chipset. The python environment is managed using [miniconda](https://docs.conda.io/en/latest/miniconda.html). If you are on a similar hardware setup, you can initialize the environment via the standard conda workflow:
 
 ```bash
 $ conda env create -f statistical-rethinking-2023.yml
