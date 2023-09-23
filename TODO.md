@@ -1,3 +1,4 @@
+- refactor all treatment effects demos using PyMC5's `do()` operator
 - Update PyMC Version [once this bug fix lands](https://github.com/pymc-devs/pymc/pull/6882).
 - Add Bayesian updating demo for correlated features to Lecture 14
 - Add HMC path demo to Lecture 14 BONUS
