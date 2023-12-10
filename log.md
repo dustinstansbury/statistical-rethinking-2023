@@ -1,5 +1,60 @@
-# Running log 
+# Running log
 Reverse date order
+
+## 2024-01-02
+
+An insight
+Use the word representative to capture the two-way nature of the likelihood
+-
+
+## 2024-01-01
+
+Trying to get a working definition of a generative model in code
+That doesn't obscure the internal machinery.
+That is, use the model, to move back and forth
+
+- data and hypothesised parameter distribution as an input, with a measure of plausibility for each hypothesis as an output (counting paths, or standardised as a probability)
+- plausibility (i.e. prior) and as an input and _dummy_ data as an output
+
+In other words, describe the model (likelihood function) as a machine with a ‘knob’ that represents the unknown parameter. You feed in data. You get back an idea of what numbers that knob might be tuned to. Or you tune the machine (adjust the knob), and it returns to you data compatible with that settings.
+
+Set knob (aka hypothesis)
+Feed in ‘data point’.
+There’s an _uncertainty_ step (tossing the globe, rolling the dice).
+Explore the uncertainty.
+Get back a quantification of the ways that that hypothesis could produce that data point.
+Repeat for all possible hypotheses.
+
+Or
+
+Set knob (aka hypothesis)
+Ask for a data point.
+Implement the _uncertainty_ step (tossing the globe, rolling the dice).
+Get back a data point compatible with that hypothesis.
+
+In both versions, there is a random event which means the model is stochastic not deterministic.
+
+Call the model, a _machine_
+Code the machine (i.e. a dice with a lethality setting)
+Then there are two ways to use this
+Conceptually to count (e.g. paths, or via pre-assigned probabilities `dbinom()`)
+Generatively to create (data) (e.g. `rbinom()`)
+
+## 2023-12-20
+
+Back here within a couple of days
+That's progress
+Started to work through the actual implementation last time
+
+## 2023-12-18
+
+It's been a week.
+Top aim is 90m / day
+Working through the book
+But anything more than 20m will be a win
+
+Jumping back to McElreath's website
+<https://xcelab.net/rm/statistical-rethinking/>
 
 ## 2023-12-11
 2nd day. Trying a little.
@@ -49,5 +104,6 @@ quarto preview web
 ```
 
 can swap into vscode to preview and edit
-
-
+recommend that we keep the `./web` folder for the blog
+and copy _static_ notebooks that don't need to be compiled into `./web/notebooks`
+but the actual notebooks will live in `./`

@@ -1,19 +1,19 @@
 # Statistical Rethinking 2023 in Python
+
 Python/PyMC 5 implementations of Richard McElreath's outstanding lecture series [Statistical Rethinking 2023](https://www.youtube.com/playlist?list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus).
 
-
-
-
 ## Setup
+
 All notebooks were developed on a Mac laptop with M1 Pro ARM64 chipset. The python environment is managed using [miniconda](https://docs.conda.io/en/latest/miniconda.html). If you are on a similar hardware setup, you can initialize the environment via the standard conda workflow:
 
 ```bash
-$ conda env create -f statistical-rethinking-2023.yml
-$ conda activate statistical-rethinking-2023
+conda env create -f statistical-rethinking-2023.yml
+conda activate statistical-rethinking-2023
 ```
+
 Otherwise, the Python version and standard packages that are imported in the notebooks via the `init_notebook.py` script are as follows:
 
-```
+```txt
 Watermark:
 ----------
 Python implementation: CPython
