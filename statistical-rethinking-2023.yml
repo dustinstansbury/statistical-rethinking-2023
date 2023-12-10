@@ -168,6 +168,8 @@ dependencies:
   - nest-asyncio=1.5.6=pyhd8ed1ab_0
   - networkx=3.1=pyhd8ed1ab_0
   - notebook-shim=0.2.3=pyhd8ed1ab_0
+  #  fixes issue with jupyter in PyCharm https://stackoverflow.com/questions/77029086/installing-both-jupyter-and-notebook-packages?noredirect=1#comment135830855_77029086
+  - notebook>=7.0
   - numpy=1.25.2=py310haa1e00c_0
   - numpyro=0.13.0=pyhd8ed1ab_0
   - openblas=0.3.24=openmp_hce3e5ba_0
@@ -267,4 +269,6 @@ dependencies:
   - zipp=3.16.2=pyhd8ed1ab_0
   - zlib=1.2.13=h53f4e23_5
   - zstd=1.5.5=h4f39d0f_0
+  - plotly=5.9.0
+  - polars=0.19.19
 prefix: /opt/homebrew/Caskroom/miniforge/base/envs/statistical-rethinking-2023

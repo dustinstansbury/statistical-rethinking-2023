@@ -1,0 +1,6 @@
+---
+title: "Statistical Rethinking"
+---
+
+Working through Statistical Rethinking using PyMC5
+
