@@ -1,0 +1,31 @@
+project:
+  type: website
+
+website:
+  title: "A little knowledge"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: glossary.qmd
+        text: Glossary
+      - about.qmd
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - section: "Basics"
+        contents:
+          - file: "./01_basics/learning-statistics-in-a-pandemic.md"
+            title: "Pandemic statistics"
+          - file: "./01_basics/Lecture 02v2 - pandemic.ipynb"
+            title: "How bad is the virus?"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+

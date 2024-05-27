@@ -1,0 +1,12 @@
+---
+title: "Statistical Rethinking"
+---
+
+Working through Statistical Rethinking using PyMC5
+
+Key references
+
+https://github.com/dustinstansbury/statistical-rethinking-2023
+https://github.com/docsteveharris/statistical-rethinking-2023
+https://xcelab.net/rm/statistical-rethinking/
+https://www.youtube.com/playlist?list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus

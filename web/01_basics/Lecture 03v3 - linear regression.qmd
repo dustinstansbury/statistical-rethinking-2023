@@ -1,0 +1,78 @@
+---
+title: "Linear regression by grid search"
+format:
+    html:
+        code-fold: false
+---
+
+## Drawing the owl
+I think for McElreath this stands in for knowledge and the model
+
+1. State a clear question (what do you want to know? what is the estimand?)
+2. Sketch the causal assumptions (i.e. draw a DAG)
+3. Define a generative model (and generate the data)
+4. Use the generative model to build and _test_ an estimator (for the estimand)
+5. Invert and use the real data to produce an estimate of the estimand
+
+### Imports and set-up
+
+```{python}
+import numpy as np
+import polars as pl
+import matplotlib.pyplot as plt
+from scipy import stats as stats
+from pathlib import Path
+
+def load_data(dataset: str, delimiter: str = ";", data_path: str = "."):
+    """
+    load one of the rethinking data sets
+
+    Parameters
+    ----------
+    dataset: str
+        name of the dataset to load
+    delimiter: str, optional
+        column separator in the file, by default ";"
+    data_path: str, optional
+        path to the directory where the data file is located, by default "."
+
+    Returns
+    -------
+    pl.DataFrame
+        the data loaded into a polars dataframe
+
+    """
+    fname = f"{dataset}.csv"
+    data_file = Path(data_path) / fname
+    return pl.read_csv(data_file, separator=delimiter)
+```
+
+### Load data
+
+```{python}
+HOWELL = load_data("Howell1", delimiter=";", data_path="./data")
+fig, axs = plt.subplots(1, 2, figsize=(8,4))
+
+KIDS = HOWELL.filter(pl.col("age") <= 18)
+ADULTS = HOWELL.filter(pl.col("age") > 18)
+
+plt.sca(axs[0])
+plt.scatter(x=KIDS["height"], y=KIDS["weight"], color="C0")
+plt.scatter(x=ADULTS["height"], y=ADULTS["weight"], color="C1")
+plt.title("Kids and adults")
+
+plt.sca(axs[1])
+plt.scatter(x=ADULTS["height"], y=ADULTS["weight"], color="C1")
+plt.title("Adults only")
+
+plt.show()
+```
+
+```{dot}
+digraph G {
+  node [shape=box, width="1", height="1"]
+  Height -> Weight;
+  node [shape=circle, width="1", height="1"]
+  Unobserved -> Weight;
+}
+```
