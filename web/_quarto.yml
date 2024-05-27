@@ -9,6 +9,8 @@ website:
         text: Home
       - href: glossary.qmd
         text: Glossary
+      - href: til/til.qmd
+        text: TIL
       - about.qmd
   sidebar:
     style: "docked"
