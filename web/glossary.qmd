@@ -18,6 +18,8 @@ Parameter
 : A conjectured value. A way of indexing possible explanations. In the running example of a die (dice) with a certain number of sides painted blue for water  (representing the globe) then the proportion of blue sides is a parameter and might range from 0 to 6 for a 6-sided die. More recently, McElreath uses the term _estimand_ to specify the parameters of interest.
 
 Likelihood
+: The _data distribution_! In non-Bayesian statistics, we call this a likelihood but we mean the stochastic machine that generates the data given some parameters. For the globe-tossing model, the data distribution is $W \sim  Binomial(N,p)$
+
 : The relative number of ways that a particular parameter value can produce the observed data. A likelihood requires a model to connect the parameter and the data, and ideally we choose a model with the minimum number of external assumptions and constraints.
 
 : _But(!)_ in conventional statistical conversation, the _likelihood_ has a specific and different meaning: a function of the parameters that is conditional on the data $\mathcal{L}(\theta|y)$. That is the probability (density) of the data given the parameters.

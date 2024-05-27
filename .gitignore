@@ -241,3 +241,5 @@ fabric.properties
 # Local stuff
 videos/
 .DS_Store
+log_files/
+.DS_Store
