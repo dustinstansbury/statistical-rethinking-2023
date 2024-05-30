@@ -1,0 +1,19 @@
+---
+title: "Today I learned"
+listing:
+    id: til-listings
+    contents: 
+        - "*.ipynb"
+        - "*.qmd"
+        - "*.md"
+    sort:
+        - "date desc"
+    categories: true
+---
+
+Your listings will appear below
+
+::: {#til-listings}
+:::
+
+See https://quarto.org/docs/websites/website-listings.html
