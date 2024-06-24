@@ -260,7 +260,7 @@ def display_image(filename, width=600):
     return display(Image(filename=f"images/{filename}", width=width))
 
 
-def simulate_2_parameter_bayesian_learning(
+def simulate_2_parameter_bayesian_learning_grid_approximation(
     x_obs,
     y_obs,
     param_a_grid,
