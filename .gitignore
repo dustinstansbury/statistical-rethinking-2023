@@ -243,3 +243,5 @@ videos/
 .DS_Store
 log_files/
 .DS_Store
+try/icu-mortality-dag_files
+try/icu-mortality-dag.html

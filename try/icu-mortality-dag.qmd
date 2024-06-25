@@ -1,0 +1,14 @@
+Work in progress on a causal DAG
+
+```{mermaid}
+flowchart LR
+  A[Age] -- decreases --> P
+  P(("Physiological\nReserve")) -- reduces--> O[ICU Mortality]
+    style O fill:#f9f
+  P -- decreases --> H["Heart\nrate"]
+  S["SACT"] -- increases --> I
+  I(("Immune\nsuppression")) -- worsens --> O
+  V((Virulence)) -- worsens --> O
+  V -- increases --> H
+```
+
